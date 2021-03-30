@@ -1,0 +1,9 @@
+# Editor-generated files
+.idea/
+
+# Project's modules
+node_modules/
+
+# .lock files
+yarn.lock
+package-lock.json
