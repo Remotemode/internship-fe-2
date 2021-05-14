@@ -2,6 +2,10 @@
 
 .main-layout {
   height: 100vh;
+
+  &__content {
+    padding: 20px 50px;
+  }
 }
 
 .header {
@@ -23,4 +27,3 @@
     font-weight: bold !important;
   }
 }
-
