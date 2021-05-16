@@ -2,10 +2,10 @@ import React, { useEffect, useState, useMemo } from 'react';
 import { Button, Table, Row, Col, Checkbox } from 'antd';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import MainLayout from '../../components/MainLayout';
-import { ROOMS_TYPES, ROOM_TYPE_LABEL, ROOM_OCCUPANCY_LIST } from '../../constants/rooms';
-import { getRoomsState } from '../../store/selectors/roomsSelectors';
-import { getRooms } from '../../store/actions/roomsActions';
+import MainLayout from '../components/MainLayout';
+import { ROOMS_TYPES, ROOM_TYPE_LABEL, ROOM_OCCUPANCY_LIST } from '../constants/rooms';
+import { getRoomsState } from '../store/selectors/roomsSelectors';
+import { getRooms } from '../store/actions/roomsActions';
 
 const RoomsTablePage = () => {
   const rooms = useSelector(getRoomsState) || [];
@@ -101,7 +101,7 @@ const RoomsTablePage = () => {
           <Button type="primary" onClick={clearAll}>Clear all filters</Button>
         </Col>
         <Col span={6}>
-          <Checkbox onChange={handleCheckboxChange} checked={isChecked} style={{ fontWeight: 'bold' }}>
+          <Checkbox onChange={handleCheckboxChange} checked={isChecked}>
             Free rooms only
           </Checkbox>
         </Col>

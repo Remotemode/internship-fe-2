@@ -67,7 +67,7 @@ const AuthPage = () => {
                 <Input.Password />
               </Form.Item>
               <Form.Item name="remember" valuePropName="checked">
-                <Checkbox className="auth-checkbox">Remember me</Checkbox>
+                <Checkbox>Remember me</Checkbox>
               </Form.Item>
               <Form.Item wrapperCol={{ offset: 9, span: 6 }}>
                 <Button type="primary" htmlType="submit" disabled={isEmptyAccounts} className="auth-btn">
